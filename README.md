@@ -141,6 +141,17 @@ When the task is ready (`status: "ready"`), `solution` contains:
 |-------|------|-------|
 | `token` | `string` | The Turnstile token. Submit as the 'cf-turnstile-response' field on the target site. |
 
+### Example
+
+```json
+{
+  "status": "ready",
+  "solution": {
+    "token": "0.AbCdEfGh1234567890_xyzqwerty.kxJ..."
+  }
+}
+```
+
 ### How to use the result
 
 Set the value as the `cf-turnstile-response` form field, or the JSON body field your site's API expects. Tokens expire after 300 seconds — submit promptly.
